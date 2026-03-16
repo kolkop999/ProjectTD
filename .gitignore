@@ -10,11 +10,20 @@ __pycache__/
 # RiderLink plugin files
 Plugins/Developer/
 
+# Builds
+**/Build/*
+**/ArchivedBuilds/*
+**/Binaries/*
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
+
+# Whitelist Binaries folders inside any nested Plugins folder
+!**/Plugins/*/Binaries/
+!**/Plugins/*/Binaries/**
 
 # Precompiled Headers
 *.gch
@@ -81,3 +90,12 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+Content/MDL*
+/.sentry-native/*
+
+# Visual studio files #
+########################
+.vs/
+/.vsconfig
+/SpaceColony.sln.DotSettings.user
