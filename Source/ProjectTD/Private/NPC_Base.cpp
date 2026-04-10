@@ -2,6 +2,7 @@
 
 
 #include "ProjectTD/Public/NPC_Base.h"
+#include "ProjectTD/Public/TDAttributeSet.h"
 
 // Sets default values
 ANPC_Base::ANPC_Base()
@@ -9,7 +10,7 @@ ANPC_Base::ANPC_Base()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>("AbilitySystemComponent");
-	AttributeSet = CreateDefaultSubobject<UAttributeSet>("AttributeSet");
+	AttributeSet = CreateDefaultSubobject<UTDAttributeSet>("AttributeSet");
 }
 
 // Called when the game starts or when spawned
